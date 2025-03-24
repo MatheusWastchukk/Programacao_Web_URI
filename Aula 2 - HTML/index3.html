@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 </title>
+</head>
+<body>
+    <h1>Entre em contato</h1>
+
+    <p>Por favor, preencha o formulario abaixo para entrar em contato conosco.</p>
+    <form action="http://localhost:4000/contato" method="POST">
+    <label for="Nome">Nome</label>
+    <br>
+    <input type="text" name="nome" id="nome">
+    <br>
+    <br>
+    <label for="Nome">Email</label>
+    <br>
+    <input type="email"  name="email" id="email">
+    <br>
+    <br>
+    <label for="Nome">Mensagem</label>
+    <br>
+    <textarea type="text" name="mensagem" id="mensagem"></textarea>
+    <br>
+    <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    
+    <h2>Mensagens enviadas</h2>
+
+    <ul>
+        <li>Nome: Fulano</li>
+        <li>Email:</li>
+        <li>Mensagem: <span id="mensagemRecebida"></span></li>
+        </ul>
+</body>
+</html>
